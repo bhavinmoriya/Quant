@@ -1,4 +1,3 @@
----
 **⚠️ DISCLAIMER**
 
 This repository is for **educational, research, and illustrative purposes only**. The content, code, and strategies provided here are **not financial advice** and should not be construed as recommendations to buy, sell, or hold any security, derivative, or financial instrument.
