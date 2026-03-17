@@ -27,10 +27,10 @@ The code is optimized for Kaggle/Google Colab environments (8GB RAM limits) by u
 *   **The Strategy:** Using your previous **XGBoost** and **LSTM** knowledge to forecast the `rt_da_spread`.
 *   **Expected Output:** Generating actual -1 (Short), 0 (Flat), and +1 (Long) trading signals.
 
-### Phase 4: Backtesting & Risk Management (Upcoming)
-*   **Concepts:** Slippage, collateral requirements, margin calls.
-*   **The Strategy:** Building a vectorized historical simulation engine.
-*   **Expected Output:** A tear-sheet showing Sharpe Ratio, Max Drawdown, and absolute PnL for your XGBoost strategy.
+### [Phase 4: Backtesting & Risk Management (`phase_4.py`)](phase_4.py)
+*   **Concepts:** Slippage, transaction fees, and quantitative performance tearsheets.
+*   **The Strategy:** Building a vectorized historical simulation engine in Polars to evaluate the ML model's real-world viability.
+*   **Expected Output:** A visualization of the Equity Curve and Drawdown depths, alongside metrics like the Sharpe Ratio.
 
 ---
 
@@ -48,4 +48,3 @@ Then execute the phase you are working on:
 !python phase_1.py
 !python phase_2.py
 ```
-
