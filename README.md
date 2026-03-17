@@ -22,7 +22,7 @@ The code is optimized for Kaggle/Google Colab environments (8GB RAM limits) by u
 *   **The Strategy:** Engineering non-linear features like `extreme_heat_degrees` to capture grid stress. 
 *   **Code:** Using `polars.join` to merge disparate time-series data (Hourly Pricing vs. Weather/Load telemetry).
 
-### Phase 3: Machine Learning (Next Up!)
+### [Phase 3: Machine Learning (`phase_3.py`)](phase_3.py)
 *   **Concepts:** Formulating the trading problem as a Regression/Classification task.
 *   **The Strategy:** Using your previous **XGBoost** and **LSTM** knowledge to forecast the `rt_da_spread`.
 *   **Expected Output:** Generating actual -1 (Short), 0 (Flat), and +1 (Long) trading signals.
