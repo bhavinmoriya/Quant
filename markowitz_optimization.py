@@ -13,6 +13,21 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from scipy.optimize import minimize
+import yfinance as yf
+from datetime import datetime, timedelta
+
+# Calculate start date (1 year ago from today)
+end_date = datetime.today().strftime('%Y-%m-%d')
+start_date = (datetime.today() - timedelta(days=365*5)).strftime('%Y-%m-%d')
+
+# Download data
+data = yf.download(TICKERS, start=start_date, end=end_date)["Close"]
+
+# data = yf.download(TICKERS, start="2020-01-01")["Close"]
+# ["Adj Close"]
+mu = data.pct_change().mean() * 252
+cov = data.pct_change().cov() * 252
+print(mu, cov)
 
 # ── Reproducibility ──────────────────────────────────────────────────────────
 np.random.seed(42)
@@ -32,6 +47,8 @@ cov_daily = A @ A.T + np.diag([0.0002] * N)
 mu_annual = mu_daily * TRADING_DAYS
 cov_annual = cov_daily * TRADING_DAYS
 
+mu_annual = mu
+cov_annual = cov
 
 # ── 2. Portfolio statistics ───────────────────────────────────────────────────
 def portfolio_stats(weights: np.ndarray,
