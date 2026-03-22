@@ -127,7 +127,7 @@ def main():
     ax2.fill_between(df['timestamp'], df['rt_da_spread'], 0, 
                      where=(df['rt_da_spread'] > 0), color='green', alpha=0.5, label='DEC Profitable (RT > DA)')
     ax2.fill_between(df['timestamp'], df['rt_da_spread'], 0, 
-                     where=(df['rt_da_spread'] < 0), color='red', alpha=0.5, label='INC Profitable (DA < RT)')
+                     where=(df['rt_da_spread'] < 0), color='red', alpha=0.5, label='INC Profitable (DA > RT)')
     ax2.set_title("The DA-RT Spread (The Algorithmic Trader's Alpha)")
     ax2.set_ylabel("Spread ($)")
     ax2.axhline(0, color='black', lw=1)
