@@ -1,0 +1,5 @@
+framework,mode,objective_eur,solve_time_s,status
+Pyomo,deterministic,73.4243237306222,0.19933099599995785,optimal
+Linopy,deterministic,73.42432373062218,4.128001728999948,ok
+Pyomo,stochastic,77.26829521712288,18.933263571999987,optimal
+Linopy,stochastic,102.75360607209052,109.492384593,ok
