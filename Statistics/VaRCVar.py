@@ -10,11 +10,11 @@ student_data = stats.t(df=3).rvs(n)
 alpha = 0.95
 
 def var_calc(x, alpha):
-    return np.quantile(x, alpha)
+    return np.quantile(x, 1 - alpha)
 
 def cvar_calc(x, alpha):
     v = var_calc(x, alpha)
-    return x[x >= v].mean()
+    return x[x <= v].mean()
 
 var_gaussian = var_calc(gaus_data, alpha)
 cvar_gaussian = cvar_calc(gaus_data, alpha)
@@ -32,7 +32,7 @@ plt.plot(x, stats.norm.pdf(x, 0, 1), label='PDF (Normal Distribution)')
 plt.axvline(var_gaussian, color='red', linestyle='--', label=f'VaR ({alpha*100:.0f}%): {var_gaussian:.2f}')
 
 # Shade the CVaR region
-x_cvar_gaussian = x[x >= var_gaussian]
+x_cvar_gaussian = x[x <= var_gaussian]
 plt.fill_between(x_cvar_gaussian, 0, stats.norm.pdf(x_cvar_gaussian, 0, 1), color='orange', alpha=0.3, label='CVaR Region')
 
 plt.title('Gaussian Distribution: VaR vs. CVaR')
@@ -48,7 +48,7 @@ plt.plot(x, stats.t.pdf(x, df=3), label='PDF (Student-t Distribution, df=3)')
 plt.axvline(var_student, color='red', linestyle='--', label=f'VaR ({alpha*100:.0f}%): {var_student:.2f}')
 
 # Shade the CVaR region
-x_cvar_student = x[x >= var_student]
+x_cvar_student = x[x <= var_student]
 plt.fill_between(x_cvar_student, 0, stats.t.pdf(x_cvar_student, df=3), color='orange', alpha=0.3, label='CVaR Region')
 
 plt.title('Student-t Distribution: VaR vs. CVaR')
