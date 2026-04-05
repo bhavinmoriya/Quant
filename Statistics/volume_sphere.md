@@ -1,5 +1,3 @@
-Here’s your updated LinkedIn post, now including the motivation inspired by the video you linked (3Blue1Brown’s *"But how does bitcoin actually work?"*), which discusses how randomness and geometry in high dimensions relate to cryptography and Bitcoin:
-
 ---
 
 **LinkedIn Post:**
