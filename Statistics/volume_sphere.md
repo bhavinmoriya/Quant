@@ -1,7 +1,3 @@
----
-
-**LinkedIn Post:**
-
 **Simulating the Volume of a Unit Sphere in Higher Dimensions (and Why It Matters for Cryptography!)**
 
 Did you know that the volume of a unit sphere in higher dimensions can be estimated using probability simulations? This isn’t just a mathematical curiosity—it’s a concept with real-world implications, especially in cryptography and blockchain technology.
