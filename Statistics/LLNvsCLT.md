@@ -33,7 +33,7 @@ The **Central Limit Theorem (CLT)** and the **Law of Large Numbers (LLN)** are b
 
 ---
 
-Here’s a visualization demonstrating the **Central Limit Theorem (CLT)** in action:
+Here’s a ![visualization](https://github.com/bhavinmoriya/Quant/blob/main/Statistics/Pictures/__emitted_0.png) demonstrating the **Central Limit Theorem (CLT)** in action:
 
 - **Top-left**: The original population distribution is **exponential** (non-normal).
 - **Other plots**: As the sample size (`n`) increases from 2 to 100, the distribution of the **sample means** becomes more and more **normal (bell-shaped)**, even though the original data is not normal.
