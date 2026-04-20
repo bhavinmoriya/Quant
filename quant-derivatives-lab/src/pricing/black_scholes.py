@@ -13,3 +13,4 @@ def put_price(S, K, r, sigma, T):
     d2 = d1 - sigma*np.sqrt(T)
 
     return K * np.exp(-r*T) * norm.cdf(-d2) - S * norm.cdf(-d1)
+
