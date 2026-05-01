@@ -1,7 +1,7 @@
 [**DISCLAIMER**](DISCLAIMER.md)
 ---
-[![GitHub stars](https://img.shields.io/github/stars/bhavinmoriya/Quant?style=social)](https://github.com/bhavinmoriya/Quant)
-**⭐ Star this repo to show your support!**
+**⭐ Found this useful?**
+Give it a star to help others discover it! 🚀
 ---
 
 # Algorithmic Trading Training: Energy Sector (PJM)
