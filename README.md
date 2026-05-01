@@ -1,6 +1,6 @@
 [**DISCLAIMER**](DISCLAIMER.md)
 ---
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/repo?style=social)](https://github.com/bhavinmoriya/Quant)
+[![GitHub stars](https://img.shields.io/github/stars/bhavinmoriya/Quant?style=social)](https://github.com/bhavinmoriya/Quant)
 **⭐ Star this repo to show your support!**
 ---
 
